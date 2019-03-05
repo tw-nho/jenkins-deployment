@@ -1,0 +1,21 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Volumes": [
+    {
+      "HostDirectory": "/usr/bin/docker",
+      "ContainerDirectory": "/usr/bin/docker"
+    },
+    {
+      "HostDirectory": "/var/run/docker.sock",
+      "ContainerDirectory": "/var/run/docker.sock"
+    },
+    {
+      "HostDirectory": "/var/jenkins_home",
+      "ContainerDirectory": "/var/jenkins_home"
+    },
+    {
+      "HostDirectory": "/root/.gradle",
+      "ContainerDirectory": "/root/.gradle"
+    }
+  ]
+}
